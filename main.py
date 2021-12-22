@@ -9,8 +9,11 @@ st.write("""
 #### Instructions:
 
 Delete the placeholder "GOOGL" and then search the ticker that you wish.
+If you wish to compare stocks just input both of your tickers e.g. AAPL GOOGL
+
+This will compare stocks in APPLE and GOOGLE!
 """)
-ticker = st.text_input('TICKER', value="GOOGL")
+ticker = st.text_input('TICKER')
 
 if ticker == '': 
   st.write("""
@@ -26,3 +29,10 @@ else:
   Volume price of
   """ + ticker)
   st.line_chart(Stock.Volume)
+
+st.write("""
+#### Author: Hemit Patel
+#### Created: 2021-12-22 or December 12th 2021
+
+"""
+)
