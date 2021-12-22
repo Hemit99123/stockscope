@@ -17,7 +17,7 @@ This will compare stocks in APPLE and GOOGLE!
 """)
 ticker = st.text_input('TICKER')
 
-if ticker !== None:
+if ticker != None:
    Stock = yf.download(ticker, start, end)
   st.write(""" 
   Closing price of 
