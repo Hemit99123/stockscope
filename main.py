@@ -17,12 +17,8 @@ This will compare stocks in APPLE and GOOGLE!
 """)
 ticker = st.text_input('TICKER')
 
-if ticker == None: 
-  st.write("""
-  Please enter an input.
-  """) 
-else:
-  Stock = yf.download(ticker, start, end)
+if ticker !== None:
+   Stock = yf.download(ticker, start, end)
   st.write(""" 
   Closing price of 
   """ + ticker)
@@ -31,6 +27,10 @@ else:
   Volume price of
   """ + ticker)
   st.line_chart(Stock.Volume)
+else:
+    st.write("""
+  Please enter an input.
+  """) 
 
 st.write("""
 #### Author: Hemit Patel
