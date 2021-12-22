@@ -19,14 +19,14 @@ ticker = st.text_input('TICKER')
 
 if ticker != None:
    Stock = yf.download(ticker, start, end)
-  st.write(""" 
-  Closing price of 
-  """ + ticker)
-  st.line_chart(Stock.Close)
-  st.write(""" 
-  Volume price of
-  """ + ticker)
-  st.line_chart(Stock.Volume)
+   st.write(""" 
+   Closing price of 
+   """ + ticker)
+   st.line_chart(Stock.Close)
+   st.write(""" 
+   Volume price of
+   """ + ticker)
+   st.line_chart(Stock.Volume)
 else:
     st.write("""
     Please enter an input.
