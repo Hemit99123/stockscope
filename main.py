@@ -32,7 +32,7 @@ if ticker != None:
    st.write(""" 
    Dividends of 
    """ + ticker)
-   st.line_chart(Stock.Dividends)
+   st.line_chart(Stock.Dividend)
 else:
     st.write("""
     Please enter an input.
