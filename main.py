@@ -29,10 +29,6 @@ if ticker != None:
    Volume price of
    """ + ticker)
    st.line_chart(Stock.Volume)
-   st.write(""" 
-   Low prices of 
-   """ + ticker)
-   st.line_chart(Stock.Low)
 else:
     st.write("""
     Please enter an input.
