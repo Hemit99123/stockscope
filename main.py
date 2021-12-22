@@ -17,7 +17,7 @@ This will compare stocks in APPLE and GOOGLE!
 """)
 ticker = st.text_input('TICKER')
 
-if ticker == '': 
+if ticker is None: 
   st.write("""
   Please enter an input.
   """) 
