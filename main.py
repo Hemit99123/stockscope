@@ -30,9 +30,9 @@ if ticker != None:
    """ + ticker)
    st.line_chart(Stock.Volume)
    st.write(""" 
-   Dividends of 
+   Low prices of 
    """ + ticker)
-   st.line_chart(Stock.Dividend)
+   st.line_chart(Stock.Low)
 else:
     st.write("""
     Please enter an input.
