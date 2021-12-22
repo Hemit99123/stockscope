@@ -29,6 +29,10 @@ if ticker != None:
    Volume price of
    """ + ticker)
    st.line_chart(Stock.Volume)
+   st.write(""" 
+   Dividends of 
+   """ + ticker)
+   st.line_chart(Stock.Dividends)
 else:
     st.write("""
     Please enter an input.
