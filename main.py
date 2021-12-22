@@ -1,8 +1,8 @@
 import yfinance as yf
 import datetime as dt
 import streamlit as st
-start = dt.datetime(1700,1,1)
-end = dt.datetime.now()
+start2 = dt.datetime(1700,1,1)
+end2 = dt.datetime.now()
 st.set_page_config(page_title='Stock App')
 
 st.write(""" 
@@ -17,8 +17,10 @@ This will compare stocks in APPLE and GOOGLE!
 """)
 ticker = st.text_input('TICKER')
 
-if ticker != '':
-   Stock = yf.download(ticker, start, end)
+if ticker != None:
+   tickerSymbol = ticker
+   tickerData = yf.Ticker(tickerSymbol)
+   Stock = tickerData.history(period='1d', start=start2, end=end2)
    st.write(""" 
    Closing price of 
    """ + ticker)
