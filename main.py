@@ -11,14 +11,18 @@ st.write("""
 Delete the placeholder "GOOGL" and then search the ticker that you wish.
 """)
 ticker = st.text_input('TICKER', value="GOOGL")
-Stock = yf.download(ticker, start, end)
-st.write(""" 
-Closing price of 
-""" + ticker)
 
-st.line_chart(Stock.Close)
-
-st.write(""" 
-Volume price of
-""" + ticker)
-st.line_chart(Stock.Volume)
+if ticker == '': 
+  st.write("""
+  # error null
+  """) 
+else:
+  Stock = yf.download(ticker, start, end)
+  st.write(""" 
+  Closing price of 
+  """ + ticker)
+  st.line_chart(Stock.Close)
+  st.write(""" 
+  Volume price of
+  """ + ticker)
+  st.line_chart(Stock.Volume)
