@@ -3,7 +3,7 @@ import datetime as dt
 import streamlit as st
 start = dt.datetime(1700,1,1)
 end = dt.datetime.now()
-st.beta_set_page_config(page_title='Stock App')
+st.set_page_config(page_title='Stock App')
 
 st.write(""" 
 # STOCK APP
