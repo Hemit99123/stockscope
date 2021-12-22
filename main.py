@@ -32,6 +32,10 @@ else:
     Please enter an input.
     """) 
 
+if ticker is None:
+   st.write(""" 
+   NULL
+   """)
 st.write("""
 #### Author: Hemit Patel
 #### Created: 2021-12-22 or December 12th 2021
