@@ -14,7 +14,7 @@ ticker = st.text_input('TICKER', value="GOOGL")
 
 if ticker == '': 
   st.write("""
-  # error null
+  Please enter an input.
   """) 
 else:
   Stock = yf.download(ticker, start, end)
