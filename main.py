@@ -29,8 +29,8 @@ if ticker != None:
   st.line_chart(Stock.Volume)
 else:
     st.write("""
-  Please enter an input.
-  """) 
+    Please enter an input.
+    """) 
 
 st.write("""
 #### Author: Hemit Patel
