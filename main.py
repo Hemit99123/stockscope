@@ -31,6 +31,7 @@ Volume price of
 st.line_chart(Stock.Volume)
 tickerData.calendar
 tickerData.dividends
+tickerData.recommendation
 
 st.write("""
 #### Author: Hemit Patel
