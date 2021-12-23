@@ -3,7 +3,7 @@ import datetime as dt
 import streamlit as st
 start2 = dt.datetime(1700,1,1)
 end2 = dt.datetime.now()
-url = 'https://i.pinimg.com/originals/9d/ff/72/9dff72a7f4e082be0150145258a82d16.png'
+url = 'https://cdn-icons-png.flaticon.com/512/1369/1369860.png'
 st.set_page_config(page_title='Stock App', page_icon=url)
 
 st.write(""" 
@@ -43,6 +43,5 @@ tickerData.recommendations
 st.write("""
 #### Author: Hemit Patel
 #### Created: 2021-12-22 or December 12th 2021
-
 """
 )
