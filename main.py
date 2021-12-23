@@ -29,7 +29,7 @@ st.write("""
 Volume price of
 """ + ticker.upper())
 st.line_chart(Stock.Volume)
-tickerSymbol.calendar
+tickerData.calendar
 
 st.write("""
 #### Author: Hemit Patel
