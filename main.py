@@ -31,9 +31,9 @@ Volume price of
 """ + ticker.upper())
 st.line_chart(Stock.Volume)
 st.write(""" 
-Major Holders of 
+Institutional of 
 """ + ticker.upper())
-tickerData.major_holders
+tickerData.institutional_holder
 st.write("""
 Dividends of
 """ + ticker.upper())
