@@ -17,28 +17,20 @@ This will compare stocks in APPLE and GOOGLE!
 """)
 ticker = st.text_input('TICKER')
 
-if ticker != None:
-   tickerSymbol = ticker
-   tickerSymbol = ticker.strip()
-   tickerData = yf.Ticker(tickerSymbol)
-   Stock = tickerData.history(period='1d', start=start2, end=end2)
-   st.write(""" 
-   Closing price of 
-   """ + ticker.upper())
-   st.line_chart(Stock.Close)
-   st.write(""" 
-   Volume price of
-   """ + ticker.upper())
-   st.line_chart(Stock.Volume)
-else:
-    st.write("""
-    Please enter an input.
-    """) 
+tickerSymbol = ticker
+tickerSymbol = ticker.strip()
+tickerData = yf.Ticker(tickerSymbol)
+Stock = tickerData.history(period='1d', start=start2, end=end2)
+st.write(""" 
+Closing price of 
+""" + ticker.upper())
+st.line_chart(Stock.Close)
+st.write(""" 
+Volume price of
+""" + ticker.upper())
+st.line_chart(Stock.Volume)
+tickerSymbol.calendar
 
-if ticker is None:
-   st.write(""" 
-   NULL
-   """)
 st.write("""
 #### Author: Hemit Patel
 #### Created: 2021-12-22 or December 12th 2021
