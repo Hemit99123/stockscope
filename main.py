@@ -9,11 +9,7 @@ st.write("""
 # STOCK APP
 
 #### Instructions:
-
-Delete the placeholder "GOOGL" and then search the ticker that you wish.
-If you wish to compare stocks just input both of your tickers e.g. AAPL GOOGL
-
-This will compare stocks in APPLE and GOOGLE!
+Just type the ticker of your stock!
 """)
 ticker = st.text_input('TICKER')
 
