@@ -29,8 +29,17 @@ st.write("""
 Volume price of
 """ + ticker.upper())
 st.line_chart(Stock.Volume)
+st.write(""" 
+Information about the stock
+""")
 tickerData.calendar
+st.write("""
+Dividends of
+""" + ticker.upper())
 tickerData.dividends
+st.write("""
+Recommendation of stocks! (This is not finicial advice, but merely the best performing stock, we are not subjected to lost in the stocks you buy)
+""")
 tickerData.recommendations
 
 st.write("""
