@@ -32,10 +32,6 @@ Institutional holders of
 """ + ticker.upper())
 tickerData.institutional_holders
 st.write("""
-Dividends of
-""" + ticker.upper())
-tickerData.dividends
-st.write("""
 Other stocks you can buy other then 
 """ + ticker.upper())
 tickerData.recommendations
