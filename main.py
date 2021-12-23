@@ -30,15 +30,15 @@ st.line_chart(Stock.Volume)
 st.write(""" 
 Institutional holders of 
 """ + ticker.upper())
-holder = tickerData.institutional_holders
+tickerData.institutional_holders
 st.write("""
 Dividends of
 """ + ticker.upper())
-dividends = tickerData.dividends
+tickerData.dividends
 st.write("""
 Other stocks you can buy other then 
 """ + ticker.upper())
-recommendation = tickerData.recommendations
+tickerData.recommendations
 
 st.write("""
 #### Author: Hemit Patel
