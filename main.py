@@ -40,15 +40,15 @@ Other stocks you can buy other then
 """ + ticker.upper())
 recommendation = tickerData.recommendations
 
-if recommendation == ' ':
+if recommendation == False:
   st.write("""
   None
   """)
-if dividends == ' ':
+if dividends == False:
   st.write("""
   None
   """)
-if holder == ' ':
+if holder == False:
   st.write("""
   None
   """)
