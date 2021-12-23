@@ -3,7 +3,8 @@ import datetime as dt
 import streamlit as st
 start2 = dt.datetime(1700,1,1)
 end2 = dt.datetime.now()
-st.set_page_config(page_title='Stock App', page_icon='https://previews.123rf.com/images/urfandadashov/urfandadashov1808/urfandadashov180821825/108800190-decreasing-stocks-bars-vector-icon-isolated-on-transparent-background-decreasing-stocks-bars-logo-co.jpg')
+url = 'https://i.pinimg.com/originals/9d/ff/72/9dff72a7f4e082be0150145258a82d16.png
+st.set_page_config(page_title='Stock App', page_icon=url)
 
 st.write(""" 
 # STOCK APP
