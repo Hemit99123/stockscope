@@ -27,7 +27,7 @@ Volume price of
 """ + ticker.upper())
 st.line_chart(Stock.Volume)
 st.write(""" 
-Institutional of 
+Institutional holders of 
 """ + ticker.upper())
 tickerData.institutional_holders
 st.write("""
