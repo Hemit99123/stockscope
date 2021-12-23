@@ -24,11 +24,11 @@ if ticker != None:
    Stock = tickerData.history(period='1d', start=start2, end=end2)
    st.write(""" 
    Closing price of 
-   """ + ticker)
+   """ + ticker.Upper())
    st.line_chart(Stock.Close)
    st.write(""" 
    Volume price of
-   """ + ticker)
+   """ + ticker.Upper())
    st.line_chart(Stock.Volume)
 else:
     st.write("""
