@@ -31,9 +31,9 @@ Volume price of
 """ + ticker.upper())
 st.line_chart(Stock.Volume)
 st.write(""" 
-Information about the stock
-""")
-tickerData.info
+Major Holders of 
+""" + ticker.upper())
+tickerData.major_holders
 st.write("""
 Dividends of
 """ + ticker.upper())
