@@ -19,7 +19,8 @@ ticker = st.text_input('TICKER')
 
 if ticker != None:
    tickerSymbol = ticker
-   tickerData = yf.Ticker(tickerSymbol)
+   mod = ticker,strip()
+   tickerData = yf.Ticker(mod)
    Stock = tickerData.history(period='1d', start=start2, end=end2)
    st.write(""" 
    Closing price of 
