@@ -31,10 +31,6 @@ st.write("""
 Institutional holders of 
 """ + ticker.upper())
 tickerData.institutional_holders
-st.write("""
-Other stocks you can buy other then 
-""" + ticker.upper())
-tickerData.recommendations
 
 st.write("""
 #### Author: Hemit Patel
