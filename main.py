@@ -40,18 +40,6 @@ Other stocks you can buy other then
 """ + ticker.upper())
 recommendation = tickerData.recommendations
 
-if recommendation == False:
-  st.write("""
-  None
-  """)
-if dividends == False:
-  st.write("""
-  None
-  """)
-if holder == False:
-  st.write("""
-  None
-  """)
 st.write("""
 #### Author: Hemit Patel
 #### Created: 2021-12-22 or December 12th 2021
