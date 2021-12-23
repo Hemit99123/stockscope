@@ -33,7 +33,7 @@ st.line_chart(Stock.Volume)
 st.write(""" 
 Information about the stock
 """)
-tickerData.calendar
+tickerData.info
 st.write("""
 Dividends of
 """ + ticker.upper())
