@@ -17,6 +17,8 @@ This will compare stocks in APPLE and GOOGLE!
 """)
 ticker = st.text_input('TICKER')
 
+tickerS = 'AAPL'
+tickerSData = yf.Ticker(tickerS)
 tickerSymbol = ticker
 tickerSymbol = ticker.strip()
 tickerData = yf.Ticker(tickerSymbol)
@@ -40,7 +42,7 @@ tickerData.dividends
 st.write("""
 Recommendation of stocks! (This is not finicial advice, but merely the best performing stock, we are not subjected to lost in the stocks you buy)
 """)
-tickerData.recommendations
+tickerSData.recommendations
 
 st.write("""
 #### Author: Hemit Patel
