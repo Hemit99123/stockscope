@@ -30,16 +30,28 @@ st.line_chart(Stock.Volume)
 st.write(""" 
 Institutional holders of 
 """ + ticker.upper())
-tickerData.institutional_holders
+holder = tickerData.institutional_holders
 st.write("""
 Dividends of
 """ + ticker.upper())
-tickerData.dividends
+dividends = tickerData.dividends
 st.write("""
 Other stocks you can buy other then 
 """ + ticker.upper())
-tickerData.recommendations
+recommendation = tickerData.recommendations
 
+if recommendation == None:
+  st.write("""
+  None
+  """)
+if dividends == None:
+  st.write("""
+  None
+  """)
+if holder == None:
+  st.write("""
+  None
+  """)
 st.write("""
 #### Author: Hemit Patel
 #### Created: 2021-12-22 or December 12th 2021
