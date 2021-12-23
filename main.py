@@ -30,6 +30,7 @@ Volume price of
 """ + ticker.upper())
 st.line_chart(Stock.Volume)
 tickerData.calendar
+tickerData.dividends
 
 st.write("""
 #### Author: Hemit Patel
