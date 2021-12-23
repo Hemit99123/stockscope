@@ -33,7 +33,7 @@ st.line_chart(Stock.Volume)
 st.write(""" 
 Institutional of 
 """ + ticker.upper())
-tickerData.institutional_holder
+tickerData.institutional_holders
 st.write("""
 Dividends of
 """ + ticker.upper())
