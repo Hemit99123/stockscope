@@ -7,7 +7,7 @@ url = 'https://cdn-icons-png.flaticon.com/512/1369/1369860.png'
 st.set_page_config(page_title='Stock App', page_icon=url)
 
 st.write(""" 
-# STOCK APP
+# STOCK SCOPE
 
 #### Instructions:
 Just type the ticker of your stock!
